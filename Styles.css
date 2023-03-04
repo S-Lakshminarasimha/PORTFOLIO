@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+h1,h2,h3,p{
+    margin:0;
+    line-height: 1.7;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background:#0a192f;
+    /* background-color: #021bf9; */
+}
+
+/*========== LOGO ==========*/
+
+#Logo{
+    color:#000;
+    font-size: 1rem;
+    padding-inline:20px;
+    opacity:0.7;
+    background-color: #fff;
+    letter-spacing:3.5px;
+    margin-left:90px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+/*========= Nav-bar =========*/
+
+#Nav_Bar{
+    width:100%;
+    height:10vh;
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: monospace;
+}
+
+#Nav_Menu{
+    margin-right:150px;
+    font-size: .95rem;
+    letter-spacing: 2px;
+    font-weight: 500;    
+}
+
+#Nav_Menu li{
+    list-style-type: none;
+    display:inline-block;
+    margin-left:50px;
+    /* flex-shrink: 1; */
+}
+
+#Nav_Menu li a:hover{
+    color:#64ffda
+}
+
+#Nav_Menu li a {
+    color:#ccd6f6;
+}
+#Nav_Menu li:first-child a{ 
+    color:#64ffda
+}
+
+
+/*========== Header ===========*/
+#Header{
+    height:90vh;
+    width:100%;
+    color:#fff;
+    padding-left:150px;
+    padding-top: 110px;
+    font-size: 1rem;
+    position: relative;
+}
+#Header_img{
+    position: absolute;
+    top:110px;
+    right:100px;
+    font-size: 15rem;
+    /* opacity: .5; */
+}
+#Header_img i{
+    color: #64ffda;
+    opacity: .8;
+}
+
+#Header_Content p:nth-child(1){
+    color:#64ffda;
+    font-size: 1.3rem;
+}
+#Header_Content p:nth-child(2){
+    font-size: 5rem;
+    color:#ccd6f6;
+    
+}
+#Header_Content p:nth-child(3){
+    font-size: 1rem;
+    color:#8892b0;
+}
+
+#Header_Button{
+    display: inline-block;
+    padding:10px 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top:20px;
+    border: 1px solid #64ffda;
+}
+#Header_Button a{
+    color:#64ffda;
+    font-weight: 400;
+}
+
+/* ABOUT SECTION */
+#About{
+    background-color:#112240;
+    width:80%;
+    height:450px;
+    margin:auto;
+    padding:50px;
+    margin-top:70px;
+    margin-bottom:200px;
+}
+
+#About_data{
+    display:flex;
+    justify-content: space-between;
+}
+
+#About_data #A_right{
+    margin: 30px 40px; 
+}
+
+
+
+#About_data h3 , #Skills h3 , #My_Works h3{
+    color:#ccd6f6;
+    font-size: 1.5rem;
+    margin-bottom:20px;
+}
+
+#A_left{
+    text-align: justify;
+    padding-right: 40px;
+}
+
+#A_left p{
+    margin-bottom: 10px;
+}
+
+/* === SKills === */
+
+#Skills,#My_Works{
+    width: 80%;
+    margin:auto;
+    padding:50px;
+    margin-top:150px;
+    margin-bottom:200px;
+    background-color: #112240;
+}
+
+#Skills_Wrapper,#Mywork_Wrapper{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-auto-rows: 200px;
+    gap:20px;
+}
+.Skill,.Work{
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Skill p{
+    color:#ccd6f6;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.Skill i{
+    font-size: 5rem;
+    color:#64ffda;
+    margin-bottom:15px;
+}
+
+.Skill svg{
+    width:100px;
+    height:100px;
+    fill: #64ffda;
+
+}
+/* =============Contact========== */
+
+#Contact{
+    width:80%;
+    padding:50px;
+    margin:0 auto;
+    background-color:#112240;
+    display: flex;
+    margin-top:150px;
+    margin-bottom:200px;
+}
+
+#Contact input,textarea{
+    background-color: rgba(0,0,0,0.2);
+    border:none;
+    outline: none;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#ccd6f6
+}
+
+
+form button, #Cv_btn{
+    padding:10px 30px;
+    background-color: inherit;
+    border:1px solid #64ffda;
+    color: #64ffda;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#C_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#C_left a span i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+#C_left h1{
+    font-size:2.5rem;
+    letter-spacing: 5px;
+}
+
+#Social_Icons i{
+    margin-left: 20px;
+    font-size: 2rem;
+    color:#ccd6f6;
+    cursor: pointer;
+}
+#Social_Icons i:first-child{
+    margin-left:0;
+}
+
+
+
+#C_right{
+    margin-left:250px;
+}
